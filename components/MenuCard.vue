@@ -5,7 +5,7 @@
   >
     <v-card-text>
       <p class="display-1 text--primary">
-        Kuře s ryžu
+        {{ meal }}
       </p>
     </v-card-text>
     <v-card-actions>
@@ -23,6 +23,7 @@
   export default {
     data: () => ({
       reveal: false,
+      meal: "Kuře s ryžu"
     }),
   }
 </script>

@@ -6,8 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - strakyho-menu',
-    title: 'strakyho-menu',
+    titleTemplate: '%s',
+    title: 'Strakyho MENU',
     htmlAttrs: {
       lang: 'en',
     },
@@ -16,7 +16,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon-32x32.png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -47,7 +47,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      // dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -57,6 +57,12 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
+        },
+        light: true,
+        light: {
+          primary: {
+            base: '#9FFEFA' 
+          },    
         },
       },
     },
